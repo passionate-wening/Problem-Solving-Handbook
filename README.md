@@ -1,2 +1,3 @@
 # Problem-Solving-Handbook
-‌Solution Manual
+Solution Manual
+Just practicing!
