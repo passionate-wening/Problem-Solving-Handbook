@@ -32,6 +32,38 @@ func TestMergeTwoLists(t *testing.T) {
 	mergeTwoLists(list1.Next, list2.Next)
 }
 
+func TestMoveZeroes(t *testing.T) {
+	n := []int{0, 1, 0, 3, 12}
+	moveZeroes1(n)
+	fmt.Println(n)
+	n = []int{0}
+	moveZeroes1(n)
+	fmt.Println(n)
+}
+
+func TestIsPalindrome(t *testing.T) {
+	n := []int{1, 3, 5, 3, 1}
+	head := &ListNode{Val: 0}
+	p := head
+	for _, v := range n {
+		p.Next = &ListNode{Val: v}
+		p = p.Next
+	}
+	isPalindrome(head.Next)
+}
+
+func TestDetectCycle(t *testing.T) {
+	n := []int{3, 2, 0, -4}
+	head := &ListNode{Val: 0}
+	p := head
+	for _, v := range n {
+		p.Next = &ListNode{Val: v}
+		p = p.Next
+	}
+	p.Next = head.Next.Next
+	detectCycle1(head.Next)
+}
+
 func TestGetIntersectionNode(t *testing.T) {
 	n2 := []int{4, 1}
 	n1 := []int{5, 6, 1}
@@ -94,6 +126,10 @@ func TestReverseKGroup(t *testing.T) {
 
 func TestGroupAnagrams(t *testing.T) {
 	fmt.Println(groupAnagrams1([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
+}
+
+func TestLongestConsecutive(t *testing.T) {
+	fmt.Println(longestConsecutive1([]int{1, 0, 1, 2}))
 }
 
 func arrayToList(nums []int) *ListNode {
