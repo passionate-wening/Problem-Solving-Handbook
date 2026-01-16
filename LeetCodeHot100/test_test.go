@@ -166,3 +166,10 @@ func printX(node *CacheNode) {
 func TestThreeSum(t *testing.T) {
 	threeSum([]int{2, -3, 0, -2, -5, -5, -4, 1, 2, -2, 2, 0, 2, -4, 5, 5, -10})
 }
+
+func TestLengthOfLongestSubstring(t *testing.T) {
+	fmt.Println(lengthOfLongestSubstring1("pwwkew"))
+	fmt.Println(lengthOfLongestSubstring1("bbbbb"))
+	fmt.Println(lengthOfLongestSubstring1("aab"))
+	fmt.Println(lengthOfLongestSubstring1(""))
+}
