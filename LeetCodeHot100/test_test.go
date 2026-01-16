@@ -173,3 +173,8 @@ func TestLengthOfLongestSubstring(t *testing.T) {
 	fmt.Println(lengthOfLongestSubstring1("aab"))
 	fmt.Println(lengthOfLongestSubstring1(""))
 }
+
+func TestFindAnagrams(t *testing.T) {
+	//fmt.Println(findAnagrams2("abab", "ab"))
+	fmt.Println(findAnagrams2("bpaa", "aa"))
+}
