@@ -16,21 +16,6 @@ func trap(height []int) int {
 	return sum
 }
 
-func min(m, n int) int {
-	if m < n {
-		return m
-	} else {
-		return n
-	}
-}
-func max(m, n int) int {
-	if m > n {
-		return m
-	} else {
-		return n
-	}
-}
-
 /*
 【题解】
 看了一眼思路，醍醐灌顶！
