@@ -1,10 +1,5 @@
 package LeetCodeHot100
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	head := &ListNode{Val: 0}
 	p := head
