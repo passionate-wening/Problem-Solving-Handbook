@@ -178,3 +178,7 @@ func TestFindAnagrams(t *testing.T) {
 	//fmt.Println(findAnagrams2("abab", "ab"))
 	fmt.Println(findAnagrams2("bpaa", "aa"))
 }
+
+func TestSubarraySum(t *testing.T) {
+	fmt.Println(subarraySum([]int{1, 2, -3}, 0))
+}
