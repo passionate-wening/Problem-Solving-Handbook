@@ -196,3 +196,9 @@ func TestMaxSlidingWindow(t *testing.T) {
 	a := maxSlidingWindow([]int{1, -1}, 1)
 	fmt.Println(a)
 }
+
+func TestSetZeroes(t *testing.T) {
+	m := [][]int{{1, 0, 1}, {1, 0, 1}, {1, 1, 1}}
+	setZeroes1(m)
+	fmt.Println(m)
+}
