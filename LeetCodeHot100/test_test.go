@@ -182,3 +182,12 @@ func TestFindAnagrams(t *testing.T) {
 func TestSubarraySum(t *testing.T) {
 	fmt.Println(subarraySum([]int{1, 2, -3}, 0))
 }
+
+func TestFlatten(t *testing.T) {
+	var temp []*TreeNode
+	temp = append(temp, &TreeNode{Val: 1})
+	temp = append(temp, &TreeNode{Val: 2})
+	fmt.Println(len(temp))
+	temp = temp[:len(temp)-1]
+	fmt.Println(len(temp))
+}
