@@ -11,16 +11,16 @@ import "math"
  * }
  */
 func isValidBST(root *TreeNode) bool {
-	return isValid(root.Left, math.MinInt, root.Val) && isValid(root.Right, root.Val, math.MaxInt)
+	return isValidT(root.Left, math.MinInt, root.Val) && isValidT(root.Right, root.Val, math.MaxInt)
 }
 
-func isValid(root *TreeNode, min, max int) bool {
+func isValidT(root *TreeNode, min, max int) bool {
 	if root == nil {
 		return true
 	} else if root.Val <= min || root.Val >= max || (root.Left != nil && root.Left.Val >= root.Val) || (root.Right != nil && root.Right.Val <= root.Val) {
 		return false
 	}
-	return isValid(root.Left, min, root.Val) && isValid(root.Right, root.Val, max)
+	return isValidT(root.Left, min, root.Val) && isValidT(root.Right, root.Val, max)
 }
 
 /*
