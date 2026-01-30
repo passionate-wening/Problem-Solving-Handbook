@@ -191,3 +191,8 @@ func TestFlatten(t *testing.T) {
 	temp = temp[:len(temp)-1]
 	fmt.Println(len(temp))
 }
+
+func TestMaxSlidingWindow(t *testing.T) {
+	a := maxSlidingWindow([]int{1, -1}, 1)
+	fmt.Println(a)
+}
