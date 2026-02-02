@@ -202,3 +202,19 @@ func TestSetZeroes(t *testing.T) {
 	setZeroes1(m)
 	fmt.Println(m)
 }
+
+func TestSortList(t *testing.T) {
+	m := []int{4, 2, 1, 3}
+	sortList2(buildTreeTest(m))
+}
+
+func buildTreeTest(nums []int) *ListNode {
+	list := &ListNode{Val: 0}
+	p := list
+	for _, v := range nums {
+		node := &ListNode{Val: v}
+		p.Next = node
+		p = p.Next
+	}
+	return list.Next
+}
