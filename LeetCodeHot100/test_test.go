@@ -224,3 +224,7 @@ func TestSpiralOrder(t *testing.T) {
 	spiralOrder([][]int{})
 	spiralOrder([][]int{{1}})
 }
+
+func TestSearchMatrix(t *testing.T) {
+	searchMatrix([][]int{{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 60}}, 13)
+}
