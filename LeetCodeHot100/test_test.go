@@ -233,3 +233,15 @@ func TestMerge(t *testing.T) {
 	x := merge([][]int{{5, 5}, {1, 3}, {3, 5}, {4, 6}, {1, 1}, {3, 3}, {5, 6}, {3, 3}, {2, 4}, {0, 0}})
 	fmt.Println(x)
 }
+func TestMinStack(t *testing.T) {
+	s := ConstructorMinStack()
+	s.Push(-10)
+	s.Push(14)
+	s.Push(-20)
+	s.Pop()
+	s.Push(10)
+	s.Push(-7)
+	s.Push(-7)
+	s.Pop()
+	s.Pop()
+}
