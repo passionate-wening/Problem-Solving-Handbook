@@ -245,3 +245,6 @@ func TestMinStack(t *testing.T) {
 	s.Pop()
 	s.Pop()
 }
+func TestRotate(t *testing.T) {
+	rotate2([]int{-1, -100, 3, 99}, 2)
+}
