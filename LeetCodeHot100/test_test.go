@@ -2,6 +2,7 @@ package LeetCodeHot100
 
 import (
 	"fmt"
+	"strconv"
 	"testing"
 )
 
@@ -205,10 +206,10 @@ func TestSetZeroes(t *testing.T) {
 
 func TestSortList(t *testing.T) {
 	m := []int{4, 2, 1, 3}
-	sortList2(buildTreeTest(m))
+	sortList2(buildListTest(m))
 }
 
-func buildTreeTest(nums []int) *ListNode {
+func buildListTest(nums []int) *ListNode {
 	list := &ListNode{Val: 0}
 	p := list
 	for _, v := range nums {
@@ -252,4 +253,45 @@ func TestRotate(t *testing.T) {
 
 func TestRotate48(t *testing.T) {
 	rotate_48([][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})
+}
+
+func TestPathSum(t *testing.T) {
+	root := buildBTreeTest([]string{"5", "4", "8", "11", "null", "13", "4", "7", "2", "null", "null", "5", "1"})
+	pathSum(root, 22)
+}
+
+func buildBTreeTest(nums []string) *TreeNode {
+	if len(nums) == 0 {
+		return &TreeNode{}
+	}
+	n, e := strconv.Atoi(nums[0])
+	root := &TreeNode{}
+	queen := []*TreeNode{}
+	if e == nil {
+		root = &TreeNode{Val: n}
+		queen = append(queen, root)
+	}
+	i := 0
+	for in := 0; in < len(queen); in++ {
+		p := queen[in]
+		if i+1 < len(nums) {
+			n, e = strconv.Atoi(nums[i+1])
+			if e == nil {
+				left := &TreeNode{Val: n}
+				queen = append(queen, left)
+				p.Left = left
+			}
+			i++
+		}
+		if i+1 < len(nums) {
+			n, e = strconv.Atoi(nums[i+1])
+			if e == nil {
+				right := &TreeNode{Val: n}
+				queen = append(queen, right)
+				p.Right = right
+			}
+			i++
+		}
+	}
+	return root
 }
