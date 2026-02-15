@@ -295,3 +295,7 @@ func buildBTreeTest(nums []string) *TreeNode {
 	}
 	return root
 }
+
+func TestOrangesRotting(t *testing.T) {
+	orangesRotting1([][]int{{2, 1, 1}, {1, 1, 1}, {0, 1, 2}})
+}
