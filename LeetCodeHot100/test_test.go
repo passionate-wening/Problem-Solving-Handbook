@@ -299,3 +299,11 @@ func buildBTreeTest(nums []string) *TreeNode {
 func TestOrangesRotting(t *testing.T) {
 	orangesRotting1([][]int{{2, 1, 1}, {1, 1, 1}, {0, 1, 2}})
 }
+
+func TestConstructoranFinish(t *testing.T) {
+	canFinish(2, [][]int{{2, 1}, {1, 0}})
+}
+
+func TestDecodeString(t *testing.T) {
+	decodeString("3[a2[c]]")
+}
