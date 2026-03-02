@@ -311,3 +311,12 @@ func TestDecodeString(t *testing.T) {
 func TestDailyTemperatures(t *testing.T) {
 	dailyTemperatures1([]int{73, 74, 75, 71, 69, 72, 76, 73, 73})
 }
+
+func TestSearch(t *testing.T) {
+	res := search1([]int{4, 5, 6, 7, 0, 1, 2}, 0)
+	fmt.Println(res)
+}
+
+func TestLargestRectangleArea(t *testing.T) {
+	//largestRectangleArea([]int{3, 6, 5, 7, 4, 8, 1, 0})
+}
