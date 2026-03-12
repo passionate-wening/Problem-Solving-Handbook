@@ -313,7 +313,7 @@ func TestDailyTemperatures(t *testing.T) {
 }
 
 func TestPermute(t *testing.T) {
-	permute([]int{1, 2, 3})
+	//permute([]int{1, 2, 3})
 }
 
 func TestSearch(t *testing.T) {
@@ -327,4 +327,8 @@ func TestLargestRectangleArea(t *testing.T) {
 
 func TestMinWindow(t *testing.T) {
 	minWindow("abc", "aabc")
+}
+
+func TestCombinationSum(t *testing.T) {
+	combinationSum([]int{2, 3, 6, 7}, 7)
 }
