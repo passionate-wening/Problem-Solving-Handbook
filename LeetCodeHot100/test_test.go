@@ -332,3 +332,7 @@ func TestMinWindow(t *testing.T) {
 func TestCombinationSum(t *testing.T) {
 	combinationSum([]int{2, 3, 6, 7}, 7)
 }
+
+func TestWordBreak(t *testing.T) {
+	wordBreak("leetcode", []string{"leet", "code"})
+}
