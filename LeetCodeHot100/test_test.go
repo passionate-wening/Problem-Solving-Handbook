@@ -336,3 +336,7 @@ func TestCombinationSum(t *testing.T) {
 func TestWordBreak(t *testing.T) {
 	wordBreak("leetcode", []string{"leet", "code"})
 }
+
+func TestCanPartition(t *testing.T) {
+	canPartition1([]int{1, 5, 11, 5})
+}
