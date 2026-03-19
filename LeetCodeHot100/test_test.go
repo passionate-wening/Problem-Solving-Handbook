@@ -340,3 +340,11 @@ func TestWordBreak(t *testing.T) {
 func TestCanPartition(t *testing.T) {
 	canPartition1([]int{1, 5, 11, 5})
 }
+
+func TestNextPermutation(t *testing.T) {
+	nextPermutation([]int{3, 2, 1})
+}
+
+func TestUniquePaths(t *testing.T) {
+	uniquePaths(3, 2)
+}
