@@ -348,3 +348,7 @@ func TestNextPermutation(t *testing.T) {
 func TestUniquePaths(t *testing.T) {
 	uniquePaths(3, 2)
 }
+
+func TestExist(t *testing.T) {
+	exist([][]byte{[]byte("ABCE"), []byte("SFES"), []byte("ADEE")}, "ABCESEEEFS")
+}
