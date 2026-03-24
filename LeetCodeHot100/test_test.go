@@ -345,10 +345,10 @@ func TestNextPermutation(t *testing.T) {
 	nextPermutation([]int{3, 2, 1})
 }
 
-func TestUniquePaths(t *testing.T) {
-	uniquePaths(3, 2)
+func TestCanFinish(t *testing.T) {
+	canFinish(3, [][]int{{1, 0}, {2, 0}, {0, 2}})
 }
 
-func TestExist(t *testing.T) {
-	exist([][]byte{[]byte("ABCE"), []byte("SFES"), []byte("ADEE")}, "ABCESEEEFS")
+func TestFindOrder(t *testing.T) {
+	findOrder(1, [][]int{})
 }
