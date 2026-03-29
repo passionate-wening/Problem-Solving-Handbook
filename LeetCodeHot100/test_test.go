@@ -345,10 +345,38 @@ func TestNextPermutation(t *testing.T) {
 	nextPermutation([]int{3, 2, 1})
 }
 
+func TestUniquePaths(t *testing.T) {
+	uniquePaths(3, 2)
+}
+
+func TestExist(t *testing.T) {
+	exist([][]byte{[]byte("ABCE"), []byte("SFES"), []byte("ADEE")}, "ABCESEEEFS")
+}
+
 func TestCanFinish(t *testing.T) {
 	canFinish(3, [][]int{{1, 0}, {2, 0}, {0, 2}})
 }
 
 func TestFindOrder(t *testing.T) {
 	findOrder(1, [][]int{})
+}
+
+func TestPartition(t *testing.T) {
+	partition("cdd")
+}
+
+func TestMinPathSum(t *testing.T) {
+	minPathSum([][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}})
+}
+
+func TestFindKthLargest(t *testing.T) {
+	findKthLargest([]int{3, 2, 1, 5, 6, 4}, 2)
+}
+
+func TestLongestCommonSubsequence1(t *testing.T) {
+	longestCommonSubsequence1("abcde", "ace")
+}
+
+func TestSolveNQueens(t *testing.T) {
+	solveNQueens(4)
 }
